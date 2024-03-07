@@ -1,10 +1,10 @@
-import { Navbar } from './components/Navbar'
-import { TwitterFollowCard } from './components/TwitterFollowCard'
+import { Navbar } from './components/Navbar';
+import './styles/index.css';
 
 export function App(){
   return (
     <>
         <Navbar/>
     </>
-    )
-}
+    );
+};
