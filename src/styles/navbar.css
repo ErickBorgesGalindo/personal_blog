@@ -1,13 +1,3 @@
-:root{
-    --mainColor: #fafbfc;
-    --mainColorNigth: #2b3137;
-    --secondaryColor: #2b3137;
-    --secondaryColorNigth: #fafbfc;
-    --textColor: #2b3137;
-    --textColorNigth: #fafbfc;
-    --thirdColor: #2dba4e;
-}
-
 header{
     display: flex;
     align-items: center;
