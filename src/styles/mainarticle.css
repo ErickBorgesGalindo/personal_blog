@@ -1,0 +1,195 @@
+
+.hs-main{
+    width: 50%;
+}
+
+.hs-main-article{
+    max-width: 100%;
+}
+
+.hs-main-article-thumb{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%
+}
+
+
+.hs-main-article img{
+    object-fit: fill;
+    width: 100vh;
+    height: 40vh;
+}
+
+.hs-main-article-category {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.hs-main-article-category span {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: small;
+    font-weight: 700;
+    color: #444;
+}
+
+.hs-main-article-category::before,
+.hs-main-article-category::after {
+  content: ""; /* Define que el pseudo-elemento no tenga contenido por defecto */
+  position: absolute; /* Posiciona los elementos de forma absoluta */
+  top: 56%; /* Ubica la línea en la mitad vertical del elemento */
+  transform: translateY(-50%); /* Compensa el desplazamiento por el top:50% */
+  width: 5%; /* Define el ancho de la línea */
+  height: 1px; /* Define el grosor de la línea */
+  background-color: #abb8c3; /* Define el color de la línea */
+}
+
+.hs-main-article-category::before {
+  left: 25%; /* Ubica la línea del lado izquierdo */
+}
+
+.hs-main-article-category::after {
+  right: 56%; /* Ubica la línea del lado derecho */
+}
+
+.hs-main-article-text{
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.hs-main-article-title{
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.hs-main-article-title h3{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.74rem;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.hs-main-article-info{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 10px;
+}
+
+.hs-main-article-info span{
+    font-family: "Archivo Narrow",sans-serif;
+    color: rgba(0,0,0,.4);
+    font-size: 0.85714rem;
+}
+.hs-main-article-info i{
+    position: relative;
+    display: inline;
+    margin-top: 40%;
+    color: rgba(0,0,0,.4);
+    font-size: 0.85714rem;
+}
+
+.hs-main-article-resume{
+    margin-top: 20px;
+}
+
+.hs-main-article-resume p{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, .6);;
+    margin-top: 20px;
+    
+}
+
+.hs-main-article-resume p::first-letter {
+    font-size: 5em;
+    color: #000;
+    margin-left: 8px;
+    float: left;
+    line-height: 1;
+}
+
+.hs-main-article-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.hs-main-article-button button{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.hs-main-article-social{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hs-main-article-social i{
+    color:#888;
+}
+
+.hs-main-article-socialmedia{
+    /* background-color: blue; */
+    display: inline-flex;
+    justify-content: start;
+    align-self: center;
+    margin-left: 8px;
+    width: 40%;
+}
+
+.hs-main-article-socialmedia a{
+    margin-right: 10%;
+}
+
+.hs-main-article-comentaries{
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+.hs-main-article-comentaries i{
+    display: flex;
+    font-size: 5rem;
+}
+
+.hs-main-article-hashtags{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:chartreuse; */
+    width: 40%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.hs-main-article-hashtags a{
+    text-decoration: none;
+    color:#888;
+}
