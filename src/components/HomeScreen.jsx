@@ -1,5 +1,6 @@
 import { MainArticle } from "./MainArticle";
 import '../styles/homescreen.css';
+import { AboutMe } from "./AboutMe";
 
 const mainArticle = [
     {
@@ -25,23 +26,7 @@ export function HomeScreen() {
                 resume={mainArticle[0].resume}
                 />
             <div className='hs-extrainfo'>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
-                <span>paco</span>
+                <AboutMe/>
             </div>
         </article>
     );

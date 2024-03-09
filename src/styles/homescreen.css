@@ -7,6 +7,7 @@ article{
 }
 
 .hs-extrainfo{
-    background-color: aqua;
-    width: 32%;
+    /* background-color: aqua; */
+    display: flex;
+    width: 50%;
 }

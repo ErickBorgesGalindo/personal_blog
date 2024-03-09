@@ -1,6 +1,6 @@
 
 .hs-main{
-    width: 50%;
+    width: 70%;
 }
 
 .hs-main-article{
@@ -52,7 +52,7 @@
 }
 
 .hs-main-article-category::after {
-  right: 56%; /* Ubica la línea del lado derecho */
+  right: 50%; /* Ubica la línea del lado derecho */
 }
 
 .hs-main-article-text{

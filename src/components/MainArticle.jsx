@@ -88,13 +88,13 @@ export function MainArticle({image, category, title, writer, date, coments, resu
                 </div>
                 <div className='hs-main-article-social'>
                     <div className='hs-main-article-socialmedia'>
-                        <a href="https://www.threads.net/@alecs_borges" target="_blank">
+                        <a href='https://www.threads.net/@alecs_borges' target="_blank">
                             <i><FaThreads /></i>
                         </a>
-                        <a href="https://twitter.com/ErickBGalindo" target="_blank">
+                        <a href='https://twitter.com/ErickBGalindo' target="_blank">
                             <i><FaXTwitter /></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/erick-borges-galindo/" target="_blank">
+                        <a href='https://www.linkedin.com/in/erick-borges-galindo/' target="_blank">
                             <i><FaLinkedinIn /></i>
                         </a>
                     </div>
