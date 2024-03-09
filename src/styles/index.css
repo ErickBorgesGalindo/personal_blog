@@ -15,6 +15,5 @@ body{
     margin: 0;
     background: var(--mainColor);
     font-family: 'Popins', sans-serif;
-    /* font-family: "Archivo Narrow",sans-serif; */
     display: grid;
 }
