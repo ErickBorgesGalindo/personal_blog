@@ -1,6 +1,7 @@
 import { MainArticle } from "./MainArticle";
-import '../styles/homescreen.css';
 import { AboutMe } from "./AboutMe";
+import { FeaturedToday } from "./FeaturedToday";
+import '../styles/homescreen.css';
 
 const mainArticle = [
     {
@@ -27,6 +28,7 @@ export function HomeScreen() {
                 />
             <div className='hs-extrainfo'>
                 <AboutMe/>
+                <FeaturedToday/>
             </div>
         </article>
     );

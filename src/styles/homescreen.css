@@ -7,7 +7,5 @@ article{
 }
 
 .hs-extrainfo{
-    /* background-color: aqua; */
-    display: flex;
-    width: 50%;
+    margin-right: 5%;
 }
