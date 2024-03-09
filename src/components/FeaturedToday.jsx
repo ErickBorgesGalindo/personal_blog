@@ -1,7 +1,7 @@
 import { CiTimer } from "react-icons/ci";
 import '../styles/featuredtoday.css';
 
-export function FeaturedToday() {
+export function FeaturedToday({category, title, date}) {
     return (
         <div className='ft-container'>
             <h4>Featured Today</h4>
@@ -9,14 +9,14 @@ export function FeaturedToday() {
                 <img alt='article image' src='https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg' />
             </div>
             <div className='ft-category'>
-                <a>Course</a>
+                <a>{category}</a>
             </div>
             <div className='ft-title'>
-                <h3>Shoot for the Moon and if You Miss You Will Still Be Among the Stars</h3>
+                <h3>{title}</h3>
             </div>
             <div className="ft-time">
                 <span>
-                    <i><CiTimer /></i>October 5, 1999
+                    <i><CiTimer /></i>{date}
                 </span>
             </div>
             <div className='tf-button'>

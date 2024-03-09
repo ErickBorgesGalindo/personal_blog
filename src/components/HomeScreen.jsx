@@ -15,6 +15,14 @@ const mainArticle = [
     }
 ];
 
+const featuredtoday=[
+    {
+        category: 'Course',
+        title: 'Shoot for the Moon and if You Miss You Will Still Be Among the Stars',
+        date: 'October 5, 1999',
+    }
+];
+
 export function HomeScreen() {
     return (
         <article>
@@ -28,7 +36,11 @@ export function HomeScreen() {
                 />
             <div className='hs-extrainfo'>
                 <AboutMe/>
-                <FeaturedToday/>
+                <FeaturedToday
+                    category={featuredtoday[0].category}
+                    title={featuredtoday[0].title}
+                    date={featuredtoday[0].date}
+                />
             </div>
         </article>
     );
