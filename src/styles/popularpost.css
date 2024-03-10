@@ -1,0 +1,58 @@
+.pp-container{
+    height: 20vh;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 20%;
+    border-top: 1px solid #ccc;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.pp-card-container{
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+.pp-card-image{
+    margin-right: 10px;
+}
+
+.pp-card-image img{
+    margin-top: 10px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.pp-card-info{
+    display: flex;
+}
+
+.pp-card-title h3{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+.pp-card-info span{
+    font-family: "Archivo Narrow",sans-serif;
+    color: rgba(0,0,0,.4);
+    font-size: 0.8rem;
+    margin-right: 10%;
+}
+
+.pp-card-info i{
+    position: relative;
+    display: inline;
+    margin-top: 50%;
+    color: rgba(0,0,0,.4);
+    font-size: 0.8rem;
+}

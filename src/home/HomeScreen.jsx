@@ -4,6 +4,7 @@ import { FeaturedToday } from "./FeaturedToday";
 import { Categories } from "./Categories";
 import { LatestTweets } from "./LatestTweets";
 import '../styles/homescreen.css';
+import { PopularPost } from "./PopularPost";
 
 const mainArticle = [
     {
@@ -45,6 +46,7 @@ export function HomeScreen() {
                 />
                 <Categories/>
                 <LatestTweets/>
+                <PopularPost/>
             </div>
         </article>
     );
