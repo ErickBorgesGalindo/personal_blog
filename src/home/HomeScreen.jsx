@@ -5,6 +5,8 @@ import { Categories } from "./Categories";
 import { LatestTweets } from "./LatestTweets";
 import '../styles/homescreen.css';
 import { PopularPost } from "./PopularPost";
+import { ArticlePrev } from "./ArticlePrev";
+import { ButtonSearch } from "../components/ButtonSearch";
 
 const mainArticle = [
     {
@@ -26,17 +28,94 @@ const featuredtoday=[
     }
 ];
 
+const artPrev=[
+    {
+        category: 'Lifestyle', 
+        title:'The Two Most Powerfull Warriors Are Patience and Time',
+        writer: 'ErickBorge', 
+        date: 'October 5, 1999', 
+        comentaries: 0, 
+        resume:'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
+        image:'https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    },
+    {
+        category: 'Course', 
+        title:'You Will Become as Small as Your Controlling Desire',
+        writer: 'ErickBorge', 
+        date: 'October 5, 1999', 
+        comentaries: 0, 
+        resume:'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
+        image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    },
+    {
+        category: 'TechNews', 
+        title:'The Two Most Powerfull Warriors Are Patience and Time',
+        writer: 'ErickBorge', 
+        date: 'October 5, 1999', 
+        comentaries: 0, 
+        resume:'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
+        image: 'https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    },
+];
+
 export function HomeScreen() {
     return (
         <article>
-            <MainArticle 
-                category={mainArticle[0].category}
-                title={mainArticle[0].title}
-                writer={mainArticle[0].writer}
-                date={mainArticle[0].date}
-                coments={mainArticle[0].coments}
-                resume={mainArticle[0].resume}
+            <div className="hs-main">
+                <MainArticle 
+                    category={mainArticle[0].category}
+                    title={mainArticle[0].title}
+                    writer={mainArticle[0].writer}
+                    date={mainArticle[0].date}
+                    coments={mainArticle[0].coments}
+                    resume={mainArticle[0].resume}
+                    />
+                <ArticlePrev
+                    image={artPrev[1].image}
+                    category={artPrev[1].category}
+                    title={artPrev[1].title}
+                    writer={artPrev[1].writer}
+                    date={artPrev[1].date}
+                    coments={artPrev[1].comentaries}
+                    resume={artPrev[1].resume}
                 />
+                <ArticlePrev
+                    image={artPrev[2].image}
+                    category={artPrev[2].category}
+                    title={artPrev[2].title}
+                    writer={artPrev[2].writer}
+                    date={artPrev[2].date}
+                    coments={artPrev[2].comentaries}
+                    resume={artPrev[2].resume}
+                />
+                <ArticlePrev
+                    image={artPrev[0].image}
+                    category={artPrev[0].category}
+                    title={artPrev[0].title}
+                    writer={artPrev[0].writer}
+                    date={artPrev[0].date}
+                    coments={artPrev[0].comentaries}
+                    resume={artPrev[0].resume}
+                />
+                <ArticlePrev
+                    image={artPrev[1].image}
+                    category={artPrev[1].category}
+                    title={artPrev[1].title}
+                    writer={artPrev[1].writer}
+                    date={artPrev[1].date}
+                    coments={artPrev[1].comentaries}
+                    resume={artPrev[1].resume}
+                />
+                <ArticlePrev
+                    image={artPrev[2].image}
+                    category={artPrev[2].category}
+                    title={artPrev[2].title}
+                    writer={artPrev[2].writer}
+                    date={artPrev[2].date}
+                    coments={artPrev[2].comentaries}
+                    resume={artPrev[2].resume}
+                />
+            </div>
             <div className='hs-extrainfo'>
                 <AboutMe/>
                 <FeaturedToday

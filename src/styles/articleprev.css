@@ -1,0 +1,69 @@
+.ap-container{
+    margin-top: 30px;
+    display: inline-flex;
+}
+
+.ap-image{
+    padding: 0 20px 0 0;
+    width: 40%;
+}
+
+.ap-image img{
+    object-fit: cover;
+    width: 90%;
+    height: 30vh;
+}
+
+.ap-text{
+    width: 60%;
+}
+
+.ap-category span{
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.ap-title{
+    /* background-color: aqua; */
+    border-bottom: 2px dashed #ccc;
+
+}
+
+.ap-title h3{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #444;
+
+}
+
+.ap-info{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 45%;
+    margin-top: 10px;
+}
+
+.ap-info span{
+    font-family: "Archivo Narrow",sans-serif;
+    color: rgba(0,0,0,.4);
+    font-size: 0.85714rem;
+}
+.ap-info i{
+    position: relative;
+    display: inline;
+    margin-top: 40%;
+    color: rgba(0,0,0,.4);
+    font-size: 0.85714rem;
+}
+
+.ap-resume{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, .6);
+    margin-top: 20px;
+    line-height: 1.6;
+}
