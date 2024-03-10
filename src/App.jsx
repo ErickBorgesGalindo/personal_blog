@@ -1,5 +1,6 @@
 import { HomeScreen } from './home/HomeScreen';
 import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 import './styles/index.css';
 
 export function App(){
@@ -7,6 +8,7 @@ export function App(){
     <>
         <Navbar/>
         <HomeScreen/>
+        <Footer/>
     </>
     );
 };

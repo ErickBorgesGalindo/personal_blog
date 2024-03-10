@@ -129,5 +129,6 @@ export function HomeScreen() {
                 <PopularPost/>
             </div>
         </article>
+
     );
 };
