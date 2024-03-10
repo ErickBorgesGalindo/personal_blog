@@ -1,0 +1,72 @@
+.cat-container{
+    height: 55%;
+    width: 100%;
+    margin-left: 20%;
+    border-bottom: 1px solid #ccc;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cat-image-container {
+    background-color: #333;
+    position: relative; /* Add this line for relative positioning */
+    margin-bottom: 10px;
+}
+
+.cat-image-container img {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+    height: 130px;
+    filter: opacity(80%);
+    transition: 0.5s ease;
+}
+
+.cat-image-container img:hover {
+    filter: opacity(40%);
+    transition: 0.5s ease;
+}
+
+.cat-category-name,
+.cat-category-count {
+    position: absolute; /* Make them absolutely positioned within the image container */
+    top: 45%; /* Position them vertically at the center */
+    left: 35%;
+    transform: translateY(-50%); /* Offset their position to counteract absolute positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Assuming you want white text over the dark background */
+}
+
+.cat-category-name {
+    background-color: #333; /* Maintain the red background for the category name */
+    width: 30%;
+    height: 15%;
+}
+
+.cat-category-name span{
+    font-family: "Archivo Narrow",sans-serif;
+}
+
+.cat-category-count{
+    width: 30%;
+    margin-top: 20px;
+
+}
+
+.cat-category-count span{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+

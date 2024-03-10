@@ -1,6 +1,7 @@
 import { MainArticle } from "./MainArticle";
 import { AboutMe } from "./AboutMe";
 import { FeaturedToday } from "./FeaturedToday";
+import { Categories } from "./Categories";
 import '../styles/homescreen.css';
 
 const mainArticle = [
@@ -41,6 +42,7 @@ export function HomeScreen() {
                     title={featuredtoday[0].title}
                     date={featuredtoday[0].date}
                 />
+                <Categories/>
             </div>
         </article>
     );
