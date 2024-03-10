@@ -2,6 +2,7 @@ import { MainArticle } from "./MainArticle";
 import { AboutMe } from "./AboutMe";
 import { FeaturedToday } from "./FeaturedToday";
 import { Categories } from "./Categories";
+import { LatestTweets } from "./LatestTweets";
 import '../styles/homescreen.css';
 
 const mainArticle = [
@@ -43,6 +44,7 @@ export function HomeScreen() {
                     date={featuredtoday[0].date}
                 />
                 <Categories/>
+                <LatestTweets/>
             </div>
         </article>
     );

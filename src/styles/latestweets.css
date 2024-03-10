@@ -1,0 +1,22 @@
+.lt-container{
+    height: 20vh;
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 20%;
+    border-top: 1px solid #ccc;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lt-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

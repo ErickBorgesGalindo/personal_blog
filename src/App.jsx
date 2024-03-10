@@ -1,4 +1,4 @@
-import { HomeScreen } from './components/HomeScreen';
+import { HomeScreen } from './home/HomeScreen';
 import { Navbar } from './components/Navbar';
 import './styles/index.css';
 
