@@ -1,5 +1,5 @@
 import '../styles/categories.css';
-import { CategoriesCard } from './CategoriesCard';
+import { CategoriesCard } from '../components/CategoriesCard';
 
 const categories=[
     {
