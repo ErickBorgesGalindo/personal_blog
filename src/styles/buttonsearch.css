@@ -1,0 +1,22 @@
+.bs-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px
+}
+
+.bs-container a{
+    font-family: "Archivo Narrow",sans-serif;
+    font-weight: 400;
+    background-color: #6C92A2;
+    font-size: 0.85714rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+.bs-container i{
+    position: relative;
+    display: inline;
+    margin-top: 40%;
+    color: #fff;
+    font-size: 0.85714rem;
+}

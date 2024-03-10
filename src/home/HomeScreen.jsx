@@ -115,6 +115,7 @@ export function HomeScreen() {
                     coments={artPrev[2].comentaries}
                     resume={artPrev[2].resume}
                 />
+                <ButtonSearch/>
             </div>
             <div className='hs-extrainfo'>
                 <AboutMe/>
