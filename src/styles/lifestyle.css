@@ -1,0 +1,59 @@
+.ls-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+}
+
+.ls-main-section{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.ls-title{
+    width: 100%;
+}
+
+.ls-title span{
+    font-family:  "Open Sans", Arial, Helvetica, sans-serif;;
+    font-style: italic;
+    position: absolute;
+    color: #888;
+    top: 8%;
+    left: 10.2%;
+}
+
+.ls-title h2{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.986rem;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.ls-articles{
+    width: 95%;
+}
+
+.ls-second-section{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 5%;
+}
+
+.ls-social{
+    height: 55vh;
+    width: 100%;
+    margin-top: 10%;
+    border-top: 1px solid #ccc;
+}
+
+.ls-social h4{
+    display: flex;
+    justify-content: center;
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
