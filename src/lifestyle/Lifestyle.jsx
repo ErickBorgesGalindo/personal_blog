@@ -2,9 +2,10 @@ import React from "react";
 import { ArticlePrev } from "../home/ArticlePrev";
 import { SocialNetwork } from "../components/SocialNetwork";
 import { FaXTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { PopularPost } from "../home/PopularPost";
 import '../styles/lifestyle.css';
 
-const artPrev = [
+const articles = [
     {
         category: 'Lifestyle',
         title: 'The Two Most Powerfull Warriors Are Patience and Time',
@@ -35,9 +36,9 @@ const artPrev = [
 ];
 
 const socials = [
-    { cta:'Follow Us', user:'@alecs510', icon: <FaXTwitter /> },
-    { cta:'Follow Us', user:'@alecs_borges', icon: <FaInstagram /> },
-    { cta:'Follow Us', user:'Erick Borges', icon: <FaLinkedinIn />},
+    { cta: 'Follow Us', user: '@alecs510', icon: <FaXTwitter />, link: 'https://twitter.com/ErickBGalindo' },
+    { cta: 'Follow Us', user: '@alecs_borges', icon: <FaInstagram />, link: 'https://www.instagram.com/alecs_borges/' },
+    { cta: 'Follow Us', user: 'Erick Borges', icon: <FaLinkedinIn />, link: 'https://www.linkedin.com/in/erick-borges-galindo/' },
 ];
 
 export function Lifestyle() {
@@ -50,52 +51,17 @@ export function Lifestyle() {
                     <h2>Lifestyle</h2>
                 </div>
                 <div className='ls-articles'>
-                    <ArticlePrev
-                        image={artPrev[1].image}
-                        category={artPrev[1].category}
-                        title={artPrev[1].title}
-                        writer={artPrev[1].writer}
-                        date={artPrev[1].date}
-                        coments={artPrev[1].comentaries}
-                        resume={artPrev[1].resume}
-                    />
-                    <ArticlePrev
-                        image={artPrev[2].image}
-                        category={artPrev[2].category}
-                        title={artPrev[2].title}
-                        writer={artPrev[2].writer}
-                        date={artPrev[2].date}
-                        coments={artPrev[2].comentaries}
-                        resume={artPrev[2].resume}
-                    />
-                    <ArticlePrev
-                        image={artPrev[0].image}
-                        category={artPrev[0].category}
-                        title={artPrev[0].title}
-                        writer={artPrev[0].writer}
-                        date={artPrev[0].date}
-                        coments={artPrev[0].comentaries}
-                        resume={artPrev[0].resume}
-                    />
-                    <ArticlePrev
-                        image={artPrev[1].image}
-                        category={artPrev[1].category}
-                        title={artPrev[1].title}
-                        writer={artPrev[1].writer}
-                        date={artPrev[1].date}
-                        coments={artPrev[1].comentaries}
-                        resume={artPrev[1].resume}
-                    />
-                    <ArticlePrev
-                        image={artPrev[2].image}
-                        category={artPrev[2].category}
-                        title={artPrev[2].title}
-                        writer={artPrev[2].writer}
-                        date={artPrev[2].date}
-                        coments={artPrev[2].comentaries}
-                        resume={artPrev[2].resume}
-                    />
-
+                    {articles.map((article) => (
+                        <ArticlePrev
+                            image={article.image}
+                            category={article.category}
+                            title={article.title}
+                            writer={article.writer}
+                            date={article.date}
+                            coments={article.comentaries}
+                            resume={article.resume}
+                        />
+                    ))}
                 </div>
             </div>
             <div className='ls-second-section'>
@@ -106,10 +72,15 @@ export function Lifestyle() {
                             cta={social.cta}
                             user={social.user}
                             icon={social.icon}
+                            link={social.link}
                         />
                     ))}
                 </div>
+                <div className="ls-popular">
+                    {/* <PopularPost/> */}
+                </div>
             </div>
+            
         </div>
     );
 }

@@ -1,8 +1,8 @@
 import '../styles/socialnetwork.css';
 
-export function SocialNetwork({cta, user, icon}) {
+export function SocialNetwork({cta, user, icon, link}) {
     return (
-        <a className='ls-media'>
+        <a href={link} target='_blank' className='ls-media'>
             <div className='ls-media-name'>
                 <span>{cta}</span>
                 <p>{user}</p>
