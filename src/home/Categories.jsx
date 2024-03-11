@@ -1,7 +1,9 @@
-import '../styles/categories.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { CategoriesCard } from '../components/CategoriesCard';
+import '../styles/categories.css';
 
-const categories=[
+const categories = [
     {
         categoryName: 'Lifestyle',
         articlesCount: 6,
@@ -19,24 +21,21 @@ const categories=[
     },
 ];
 
-export function Categories(){
-    return(
+export function Categories() {
+    return (
         <div className="cat-container">
             <h4>
                 Categories
             </h4>
-            <CategoriesCard 
-                image={categories[0].image}
-                categoryName={categories[0].categoryName}
-                articlesCount={categories[0].articlesCount}/>
-            <CategoriesCard
-                image={categories[1].image}
-                categoryName={categories[1].categoryName}
-                articlesCount={categories[1].articlesCount}/>
-            <CategoriesCard
-                image={categories[2].image}
-                categoryName={categories[2].categoryName}
-                articlesCount={categories[2].articlesCount}/>
+            {categories.map((category) => (
+                <Link key={category.categoryName} to={`category/${category.categoryName}`}>
+                    <CategoriesCard
+                        image={category.image}
+                        categoryName={category.categoryName}
+                        articlesCount={category.articlesCount}
+                    />
+                </Link>
+            ))}
         </div>
     );
 }
