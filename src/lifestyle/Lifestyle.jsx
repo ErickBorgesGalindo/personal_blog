@@ -77,7 +77,7 @@ export function Lifestyle() {
                     ))}
                 </div>
                 <div className="ls-popular">
-                    {/* <PopularPost/> */}
+                    <PopularPost/>
                 </div>
             </div>
             
