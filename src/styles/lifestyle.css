@@ -2,14 +2,12 @@
     margin-left: 10%;
     margin-right: 10%;
     display: inline-flex;
-    background-color: red;
 }
 
 .ls-main-section{
     display: flex;
     flex-direction: column;
     width: 75%;
-    background-color: black;
 }
 
 .ls-title{
@@ -42,11 +40,10 @@
     flex-direction: column;
     width: 25%;
     margin-top: 5%;
-    background-color: aqua;
 }
 
 .ls-social{
-    height: 55vh;
+    height: 50vh;
     width: 100%;
     margin-top: 10%;
     border-top: 1px solid #ccc;
@@ -59,4 +56,12 @@
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.ls-popular{
+    background-color: red;
+}
+
+.ls-categories{
+    margin-top: 40vh;
 }

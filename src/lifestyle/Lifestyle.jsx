@@ -1,6 +1,7 @@
 import React from "react";
 import { ArticlePrev } from "../home/ArticlePrev";
 import { SocialNetwork } from "../components/SocialNetwork";
+import { Categories } from "../home/Categories";
 import { FaXTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { PopularPost } from "../home/PopularPost";
 import '../styles/lifestyle.css';
@@ -14,6 +15,24 @@ const articles = [
         comentaries: 0,
         resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
         image: 'https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    },
+    {
+        category: 'Lifestyle',
+        title: 'You Will Become as Small as Your Controlling Desire',
+        writer: 'ErickBorge',
+        date: 'October 5, 1999',
+        comentaries: 0,
+        resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
+        image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+    },
+    {
+        category: 'Lifestyle',
+        title: 'The Two Most Powerfull Warriors Are Patience and Time',
+        writer: 'ErickBorge',
+        date: 'October 5, 1999',
+        comentaries: 0,
+        resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
+        image: 'https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     },
     {
         category: 'Lifestyle',
@@ -77,10 +96,13 @@ export function Lifestyle() {
                     ))}
                 </div>
                 <div className="ls-popular">
-                    <PopularPost/>
+                    <PopularPost />
+                </div>
+                <div className="ls-categories">
+                    <Categories/>
                 </div>
             </div>
-            
+
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import { PopularPostCard } from '../components/PopularPostCard';
 import '../styles/popularpost.css';
 
-const popular = [
+const populars = [
     {
         image: 'https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'The Greatest Thing in The World is to Know How to Belong to Oneself',
@@ -33,27 +33,13 @@ export function PopularPost() {
     return (
         <div className="pp-container">
             <h4>Popular Posts</h4>
-            <PopularPostCard
-                image={popular[0].image}
-                title={popular[0].title}
-                date={popular[0].date}
-                views={popular[0].view} />
-            <PopularPostCard
-                image={popular[1].image}
-                title={popular[1].title}
-                date={popular[1].date}
-                views={popular[1].view} />
-            <PopularPostCard
-                image={popular[2].image}
-                title={popular[2].title}
-                date={popular[2].date}
-                views={popular[2].view} />
-            <PopularPostCard
-                image={popular[3].image}
-                title={popular[3].title}
-                date={popular[3].date}
-                views={popular[3].view} />
-
+            {populars.map((popular)=>(
+                <PopularPostCard
+                image={popular.image}
+                title={popular.title}
+                date={popular.date}
+                views={popular.view} />
+            ))}
         </div>
     );
 }
