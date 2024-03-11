@@ -1,0 +1,64 @@
+.cs-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+}
+
+.cs-main-section{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.cs-title{
+    width: 100%;
+}
+
+.cs-title span{
+    font-family:  "Open Sans", Arial, Helvetica, sans-serif;;
+    font-style: italic;
+    position: absolute;
+    color: #888;
+    top: 8%;
+    left: 10.2%;
+}
+
+.cs-title h2{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.986rem;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.cs-articles{
+    width: 95%;
+}
+
+.cs-second-section{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 5%;
+}
+
+.cs-social{
+    height: 50vh;
+    width: 100%;
+    margin-top: 10%;
+    border-top: 1px solid #ccc;
+}
+
+.cs-social h4{
+    display: flex;
+    justify-content: center;
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.cs-categories{
+    margin-top: 40vh;
+}

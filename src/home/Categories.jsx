@@ -10,7 +10,7 @@ const categories = [
         image: 'https://images.pexels.com/photos/1092671/pexels-photo-1092671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
     {
-        categoryName: 'Course',
+        categoryName: 'Courses',
         articlesCount: 7,
         image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     },
