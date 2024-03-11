@@ -13,7 +13,7 @@ export function Navbar(){
         <h3>Alecs</h3>
         <nav ref={NavRef}>
             <a href="/#">Home</a>
-            <a href="/#">Portfolio</a>
+            <a href="/category/Courses">Courses</a>
             <a href="/#">About Me</a>
             <a href="/#">Chetos</a>
             <button>
