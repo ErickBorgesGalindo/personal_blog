@@ -1,0 +1,64 @@
+.tn-container{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+}
+
+.tn-main-section{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.tn-title{
+    width: 100%;
+}
+
+.tn-title span{
+    font-family:  "Open Sans", Arial, Helvetica, sans-serif;;
+    font-style: italic;
+    position: absolute;
+    color: #888;
+    top: 8%;
+    left: 10.2%;
+}
+
+.tn-title h2{
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2.986rem;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.tn-articles{
+    width: 95%;
+}
+
+.tn-second-section{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: 5%;
+}
+
+.tn-social{
+    height: 50vh;
+    width: 100%;
+    margin-top: 10%;
+    border-top: 1px solid #ccc;
+}
+
+.tn-social h4{
+    display: flex;
+    justify-content: center;
+    font-family: "Archivo Narrow",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.tn-categories{
+    margin-top: 40vh;
+}
