@@ -1,28 +1,33 @@
-import { FaThreads, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+import { FaThreads, FaXTwitter, FaLinkedinIn, FaReact } from "react-icons/fa6";
 import '../styles/footer.css'
 
 export function Footer() {
     return (
         <footer>
             <div className="footer-container">
-                <div className="footer-info">
-                    <h4>AlecsBlog</h4>
-                    <p>Mantente al día con las últimas tendencias tecnológicas, aprende nuevas habilidades de programación y descubre un estilo de vida digital que te apasione.</p>
+                <div className="footer-sections">
+                    <a href="">Home</a>
+                    <a href="">Lifestyle</a>
+                    <a href="">TechNews</a>
+                    <a href="">Courses</a>
+                    <a href="">Contact Us</a>
                 </div>
-                <div className="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>Si quieres colaborar de escribiendo o solicitando un tema, contáctame</p>
-                    <p>erick.borges@outlook.es</p>
-                    <p>+782 122 22 22</p>
+                <div className="footer-socials">
+                    <a href='https://www.threads.net/@alecs_borges' target="_blank">
+                        <i><FaThreads /></i>
+                    </a>
+                    <a href='https://twitter.com/ErickBGalindo' target="_blank">
+                        <i><FaXTwitter /></i>
+                    </a>
+                    <a href='https://www.linkedin.com/in/erick-borges-galindo/' target="_blank">
+                        <i><FaLinkedinIn /></i>
+                    </a>
                 </div>
-                <div className="footer-social-media">
-                    <h4>Give me a Follow</h4>
-                    <div className="footer-social-media-icons">
-                        <a href='https://www.threads.net/@alecs_borges'><i><FaThreads /></i></a>
-                        <a href='https://www.linkedin.com/in/erick-borges-galindo/'><i><FaLinkedinIn /></i></a>
-                        <a href='https://twitter.com/ErickBGalindo'><i><FaXTwitter /></i></a>
-                    </div>
-                </div>
+            </div>
+            <div className="footer-rights">
+                <span>Erick Borges © 2024. Made with React </span>
+                <i> <FaReact /> </i> 
+                <span> all rights reserved.</span>
             </div>
         </footer>
     );

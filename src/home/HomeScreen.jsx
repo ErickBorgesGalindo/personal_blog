@@ -2,11 +2,11 @@ import { MainArticle } from "./MainArticle";
 import { AboutMe } from "./AboutMe";
 import { FeaturedToday } from "./FeaturedToday";
 import { Categories } from "./Categories";
-import { LatestTweets } from "./LatestTweets";
-import '../styles/homescreen.css';
 import { PopularPost } from "./PopularPost";
 import { ArticlePrev } from "./ArticlePrev";
 import { ButtonSearch } from "../components/ButtonSearch";
+import { LatestTweets } from "./LatestTweets";
+import '../styles/homescreen.css';
 
 const mainArticle = [
     {
