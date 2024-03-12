@@ -10,7 +10,7 @@ export function Navbar(){
     }
   return (
     <header>
-        <h3>Alecs</h3>
+        <a href="/#"><h3>Alecs</h3></a>
         <nav ref={NavRef}>
             <a href="/#">Home</a>
             <a href="/category/Courses">Courses</a>
