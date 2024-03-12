@@ -1,5 +1,5 @@
 article{
-    display: inline-flex;
+    display: flex;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 50px;
@@ -10,3 +10,19 @@ article{
     width: 100%;
     margin-left: 5%;
 }
+  
+  @media (max-width: 1080px) {
+    article {
+        display: flex;
+      flex-direction: column;
+      background-color: red;
+      justify-content: center;
+    }
+  
+    .hs-extrainfo {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+  /* Add responsive styles for images, fonts, etc. as needed */
