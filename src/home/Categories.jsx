@@ -28,7 +28,7 @@ export function Categories() {
                 Categories
             </h4>
             {categories.map((category) => (
-                <Link key={category.categoryName} to={`category/${category.categoryName}`}>
+                <Link key={category.categoryName} to={`/category/${category.categoryName}`}>
                     <CategoriesCard
                         image={category.image}
                         categoryName={category.categoryName}
