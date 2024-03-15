@@ -6,6 +6,7 @@ import { PopularPost } from "./PopularPost";
 import { ArticlePrev } from "./ArticlePrev";
 import { ButtonSearch } from "../components/ButtonSearch";
 import { LatestTweets } from "./LatestTweets";
+import { useState, useEffect } from "react";
 import '../styles/homescreen.css';
 
 const mainArticle = [
@@ -86,6 +87,27 @@ const articles = [
 ];
 
 export function HomeScreen() {
+    // ------- Guardar información en react native
+    const [category, setCategory] = useState({
+        nombre: "Paco",
+	    articles: 2 ,
+	    image: "none",
+    });
+
+    console.log(category);
+
+    const handleSubmit = async (e) =>{
+        const res = await fetch('http://localhost:3000/categories',{
+            method: 'POST',
+            body: JSON.stringify(category),
+            headers:{'Content-Type': 'application/json'},
+        });
+        const data = await res.json();
+        console.log(data);
+    };
+    //--------------------------------------
+
+
     return (
         <article>
             <div className="hs-main">
@@ -108,7 +130,7 @@ export function HomeScreen() {
                         resume={article.resume}
                     />
                 ))}
-                <ButtonSearch />
+                <ButtonSearch onClick={handleSubmit} />
             </div>
             <div className='hs-extrainfo'>
                 <div className="hs-aboutme">

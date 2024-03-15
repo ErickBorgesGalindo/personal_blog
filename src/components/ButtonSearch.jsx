@@ -1,12 +1,12 @@
 import { AiOutlineRight } from "react-icons/ai";
 import '../styles/buttonsearch.css'
 
-export function ButtonSearch(){
+export function ButtonSearch({onClick}){
     return(
-        <div className="bs-container">
+        <button className="bs-container" onClick={onClick}>
             <a>See more articles 
                 <i><AiOutlineRight/></i>
             </a>
-        </div>
+        </button>
     );
 }
