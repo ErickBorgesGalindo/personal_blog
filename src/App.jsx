@@ -8,6 +8,7 @@ import { Courses } from './courses/Courses';
 import { Outlet } from 'react-router-dom';
 import './styles/index.css';
 import { TechNews } from './technews/TechNews';
+import { Admin } from './admin/Admin';
 
 // 1. Crea el componente Layout para agrupar la barra de navegación y el pie de página
 function Layout() {
@@ -18,6 +19,16 @@ function Layout() {
         <Outlet />
       </main>
       <Footer />
+    </div>
+  );
+}
+
+function AdminLayout() {
+  return (
+    <div>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 }
@@ -33,6 +44,9 @@ export function App() {
           <Route path='category/Courses' element={<Courses />} />
           <Route path='category/TechNews' element={<TechNews />} />
         </Route>
+        <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<Admin />} />
+          </Route>
       </Routes>
     </>
   );
