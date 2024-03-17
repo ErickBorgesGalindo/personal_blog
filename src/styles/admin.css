@@ -1,12 +1,10 @@
 .adm-container{
-    /* background-image: url('../assets/images/bg-image.png'); */
     background-color: blue;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-size: cover; */
 }
 
 .bg-image{
@@ -16,11 +14,8 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
     opacity: 0.3;
-
+    object-fit: cover;
 }
 
 .adm-main-section{
@@ -71,7 +66,6 @@
     justify-content: center;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    padding: 0;
 }
 .mail i{
     align-items: center;
@@ -87,11 +81,11 @@
     height: 40px;
     width: 100%;
     margin-left: 20px;
-    /* background-color: rgba(255,255,255,0.3); */
     background-color: transparent;
     font-family: "Archivo Narrow",sans-serif;
     font-size: 1rem;
     border-color: transparent;
+    color: #ccc;
 }
 
 .pass{
@@ -114,11 +108,11 @@
     height: 40px;
     width: 100%;
     margin-left: 20px;
-    /* background-color: rgba(255,255,255,0.3); */
     background-color: transparent;
     font-family: "Archivo Narrow",sans-serif;
     font-size: 1rem;
     border-color: transparent;
+    color: #ccc;
 }
 
 .options{
