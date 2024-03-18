@@ -60,14 +60,15 @@
     width: 45%;
 }
 
-.mail{
+.input-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
     border: 1px solid #ccc;
 }
-.mail i{
+
+.input-container i{
     align-items: center;
     font-size: xx-large;
     font-weight: bold;
@@ -77,7 +78,7 @@
     color: #ccc;
 }
 
-.mail input{
+.input-container input{
     height: 40px;
     width: 100%;
     margin-left: 20px;
@@ -88,31 +89,12 @@
     color: #ccc;
 }
 
-.pass{
+.error{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-}
-.pass i{
-    align-items: center;
-    font-size: xx-large;
-    border-right: 1px solid #ccc;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: #ccc;
-}
-
-.pass input{
-    height: 40px;
-    width: 100%;
-    margin-left: 20px;
-    background-color: transparent;
-    font-family: "Archivo Narrow",sans-serif;
-    font-size: 1rem;
-    border-color: transparent;
-    color: #ccc;
+    border: 1px solid #ff0000;
 }
 
 .options{
@@ -142,4 +124,8 @@
     color: #ccc;
     font-family: "Archivo Narrow",sans-serif;
     font-size: 1rem;
+}
+
+p{
+    color: red
 }

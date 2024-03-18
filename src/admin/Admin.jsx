@@ -12,6 +12,11 @@ export function Admin() {
         password: ''
     });
 
+    const [error, setError] = useState({ // Estado para manejar el error
+        email: false,
+        password: false
+    });
+
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -20,6 +25,7 @@ export function Admin() {
         const user = users.find((u) => u.email === InputUser.email);
 
         if (!user) {
+            setError({ email: true, password: true });
             console.log('Correo electrónico no encontrado');
             return;
         }
@@ -37,11 +43,13 @@ export function Admin() {
             navigate('admin/dashboard');
             // Handle successful login (e.g., redirect to protected area)
         } else {
+            setError({ email: true, password: true });
             console.log('Contraseña incorrecta');
         }
     };
 
     const handleChange = e => {
+        setError({ email: false, password: false });
         setInputUser({ ...InputUser, [e.target.name]: e.target.value });
     };
 
@@ -71,15 +79,17 @@ export function Admin() {
                 </div>
                 <div className='adm-form'>
                     <form>
-                        <div className="mail">
+                        <div className={`input-container ${error.email ? 'error' : ''}`}>
                             <i><MdMailOutline /></i>
                             <input type='email' id='email' name='email' onChange={handleChange} placeholder='Enter your email address' required />
                         </div>
 
-                        <div className="pass">
+                        <div className={`input-container ${error.password ? 'error' : ''}`}>
                             <i><RiLockPasswordLine /></i>
                             <input type='password' id='password' name='password' onChange={handleChange} placeholder='Enter your password' required />
                         </div>
+
+                        {error.email ? <p>Información incorrecta</p> : null}
 
                         <div className="options">
                             <a href="#">¿Ha olvidado su contraseña?</a>
