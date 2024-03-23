@@ -7,6 +7,7 @@ import { ArticlePrev } from "./ArticlePrev";
 import { ButtonSearch } from "../components/ButtonSearch";
 import { LatestTweets } from "./LatestTweets";
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import '../styles/homescreen.css';
 
 const mainArticle = [
@@ -44,7 +45,7 @@ const articles = [
         title: 'You Will Become as Small as Your Controlling Desire',
         writer: 'ErickBorge',
         date: 'October 5, 1999',
-        comentaries: 0,
+        comentaries: 1,
         resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
         image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     },
@@ -53,7 +54,7 @@ const articles = [
         title: 'The Two Most Powerfull Warriors Are Patience and Time',
         writer: 'ErickBorge',
         date: 'October 5, 1999',
-        comentaries: 0,
+        comentaries: 2,
         resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
         image: 'https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     },
@@ -62,7 +63,7 @@ const articles = [
         title: 'The Two Most Powerfull Warriors Are Patience and Time',
         writer: 'ErickBorge',
         date: 'October 5, 1999',
-        comentaries: 0,
+        comentaries: 3,
         resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
         image: 'https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     },
@@ -71,7 +72,7 @@ const articles = [
         title: 'You Will Become as Small as Your Controlling Desire',
         writer: 'ErickBorge',
         date: 'October 5, 1999',
-        comentaries: 0,
+        comentaries: 4,
         resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
         image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     },
@@ -80,7 +81,7 @@ const articles = [
         title: 'The Two Most Powerfull Warriors Are Patience and Time',
         writer: 'ErickBorge',
         date: 'October 5, 1999',
-        comentaries: 0,
+        comentaries: 5,
         resume: 'Met to launch on the manufacturer’s new A330neo aircraft in 2017, it’s offering lots of extra space, including wider seats as standard, no ...',
         image: 'https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
     },
@@ -90,17 +91,17 @@ export function HomeScreen() {
     // ------- Guardar información en react native
     const [category, setCategory] = useState({
         nombre: "Paco",
-	    articles: 2 ,
-	    image: "none",
+        articles: 2,
+        image: "none",
     });
 
     console.log(category);
 
-    const handleSubmit = async (e) =>{
-        const res = await fetch('http://localhost:3000/categories',{
+    const handleSubmit = async (e) => {
+        const res = await fetch('http://localhost:3000/categories', {
             method: 'POST',
             body: JSON.stringify(category),
-            headers:{'Content-Type': 'application/json'},
+            headers: { 'Content-Type': 'application/json' },
         });
         const data = await res.json();
         console.log(data);
@@ -120,15 +121,17 @@ export function HomeScreen() {
                     resume={mainArticle[0].resume}
                 />
                 {articles.map((article) => (
-                    <ArticlePrev
-                        image={article.image}
-                        category={article.category}
-                        title={article.title}
-                        writer={article.writer}
-                        date={article.date}
-                        coments={article.comentaries}
-                        resume={article.resume}
-                    />
+                    <Link key={article.comentaries}>
+                        <ArticlePrev
+                            image={article.image}
+                            category={article.category}
+                            title={article.title}
+                            writer={article.writer}
+                            date={article.date}
+                            coments={article.comentaries}
+                            resume={article.resume}
+                        />
+                    </Link>
                 ))}
                 <ButtonSearch onClick={handleSubmit} />
             </div>
