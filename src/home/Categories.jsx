@@ -43,10 +43,10 @@ export function Categories() {
                 Categories
             </h4>
             {categories.map((category) => (
-                <Link key={category.id_cat} to={`/category/${category.nombre}`}>
+                <Link key={category.id_cat} to={`/category/${category.cat_name}`}>
                     <CategoriesCard
                         image={category.image}
-                        categoryName={category.nombre}
+                        categoryName={category.cat_name}
                         articlesCount={category.articles}
                     />
                 </Link>

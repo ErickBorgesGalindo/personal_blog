@@ -90,7 +90,7 @@ const articles = [
 export function HomeScreen() {
     // ------- Guardar información en react native
     const [category, setCategory] = useState({
-        nombre: "Paco",
+        cat_name: "Paco",
         articles: 2,
         image: "none",
     });
