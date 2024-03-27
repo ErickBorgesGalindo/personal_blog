@@ -70,7 +70,7 @@ export function Admin() {
     return (
         <div className='adm-container'>
             <div className="bg-image">
-                <img src='../src/assets/images/bg-image.png' />
+                <img src='../src/assets/images/news.jpg' />
             </div>
             <div className='adm-main-section'>
                 <div className='adm-title'>
